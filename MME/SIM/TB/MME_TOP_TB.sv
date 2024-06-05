@@ -141,16 +141,6 @@ module MME_TOP_TB ();
             mat_b[row][col]                 = $urandom()%256;
           end
         end
-//        for (int i=0; i<mat_width; i++) begin
-//            for (int j=0; j<4; j++) begin
-//                //mat_a[i][j]                 = 32'h1;
-//                //mat_b[j][i]                 = 32'h1;
-//                //mat_a[i][j]                 = i*'h10+j;
-//                //mat_b[j][i]                 = i*'h100+j;
-//                mat_a[j][i]                 = $urandom()%256;
-//                mat_b[i][j]                 = $urandom()%256;
-//            end
-//        end
     endtask
 
     // test matrix multiplication
