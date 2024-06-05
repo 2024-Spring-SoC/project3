@@ -96,7 +96,8 @@ module MM_ENGINE
     #(
         .DW                     (DW),
         .SA_WIDTH               (SA_WIDTH)
-     ) u_sa
+    ) 
+	u_sa
     (
         .clk                    (clk),
         .rst_n                  (rst_n),
