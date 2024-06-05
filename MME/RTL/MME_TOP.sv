@@ -66,7 +66,7 @@ module MME_TOP
         .pwdata_i               (apb_if.pwdata),
         .prdata_o               (apb_if.prdata),
         .pready_o               (apb_if.pready),
-        .pslverr_o              ('b0),
+        .pslverr_o              (/* FLOATING */),
 
         .hwif_in                (cfg_hwif_in),
         .hwif_out               (cfg_hwif_out)
