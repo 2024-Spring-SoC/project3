@@ -88,7 +88,7 @@ module AXI_SLAVE
 
     .awvalid_i              (aw_ch.awvalid),
     .awid_i                 (aw_ch.awid),
-    .awaddr_i               (aw_ch.awaddr),
+    .awaddr_i               (aw_ch.awaddr[ADDR_WIDTH-1:0]),
     .awlen_i                (aw_ch.awlen),
     .awsize_i               (aw_ch.awsize),
     .awburst_i              (aw_ch.awburst),
@@ -264,7 +264,7 @@ module AXI_SLAVE
 
     .arvalid_i              (ar_ch.arvalid),
     .arid_i                 (ar_ch.arid),
-    .araddr_i               (ar_ch.araddr),
+    .araddr_i               (ar_ch.araddr[ADDR_WIDTH-1:0]),
     .arlen_i                (ar_ch.arlen),
     .arsize_i               (ar_ch.arsize),
     .arburst_i              (ar_ch.arburst),
